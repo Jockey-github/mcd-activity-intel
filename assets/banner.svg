@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DA291C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C41E1E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFC72C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFBC0D;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="180" fill="#C41E1E" opacity="0.3"/>
+  <circle cx="1100" cy="320" r="200" fill="#C41E1E" opacity="0.3"/>
+  <circle cx="900" cy="50" r="100" fill="#B71C1C" opacity="0.2"/>
+
+  <!-- Top decorative line -->
+  <rect x="50" y="30" width="1100" height="2" fill="url(#gold)" opacity="0.4" rx="1"/>
+  <rect x="50" y="368" width="1100" height="2" fill="url(#gold)" opacity="0.4" rx="1"/>
+
+  <!-- Spy icon / magnifying glass -->
+  <g transform="translate(160, 170)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#FFC72C" stroke-width="6"/>
+    <line x1="38" y1="38" x2="65" y2="65" stroke="#FFC72C" stroke-width="6" stroke-linecap="round"/>
+    <!-- Eye in magnifying glass -->
+    <circle cx="0" cy="-5" r="20" fill="none" stroke="#FFC72C" stroke-width="3"/>
+    <circle cx="0" cy="-5" r="8" fill="#FFC72C"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="150" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="72" font-weight="bold" fill="#FFC72C" text-anchor="middle" filter="url(#shadow)">🕵️ 麦门活动情报局</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="210" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="28" fill="#FFFFFF" text-anchor="middle" opacity="0.95">mcd-activity-intel</text>
+
+  <!-- Tagline -->
+  <text x="600" y="265" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="24" fill="#FFFFFF" text-anchor="middle" opacity="0.85">你的麦当劳活动私人情报员 — 不再错过任何薅羊毛的机会</text>
+
+  <!-- Feature badges -->
+  <g transform="translate(600, 320)" text-anchor="middle">
+    <!-- Badge 1 -->
+    <rect x="-460" y="-18" width="170" height="36" rx="18" fill="#FFC72C" opacity="0.9"/>
+    <text x="-375" y="7" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="bold" fill="#DA291C">📋 活动全景情报</text>
+
+    <!-- Badge 2 -->
+    <rect x="-260" y="-18" width="150" height="36" rx="18" fill="#FFC72C" opacity="0.9"/>
+    <text x="-185" y="7" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="bold" fill="#DA291C">🎫 一键领券</text>
+
+    <!-- Badge 3 -->
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#FFC72C" opacity="0.9"/>
+    <text x="0" y="7" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="bold" fill="#DA291C">💰 积分推荐</text>
+
+    <!-- Badge 4 -->
+    <rect x="110" y="-18" width="170" height="36" rx="18" fill="#FFC72C" opacity="0.9"/>
+    <text x="195" y="7" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="bold" fill="#DA291C">🎉 派对查询</text>
+
+    <!-- Badge 5 -->
+    <rect x="310" y="-18" width="170" height="36" rx="18" fill="#FFC72C" opacity="0.9"/>
+    <text x="395" y="7" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="bold" fill="#DA291C">⚡ 12个MCP工具</text>
+  </g>
+
+  <!-- Bottom text -->
+  <text x="600" y="388" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle" opacity="0.5">McDonald's Developer Innovation Challenge 2026 | Powered by McDonald's MCP</text>
+</svg>

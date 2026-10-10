@@ -1,5 +1,19 @@
 # 🕵️ 麦门活动情报局 (mcd-activity-intel)
 
+<p align="center">
+  <img src="./assets/banner.svg" alt="麦门活动情报局 Banner" width="1000" />
+</p>
+
+<p align="center">
+  <strong>你的麦当劳活动私人情报员 — 不再错过任何薅羊毛的机会</strong>
+</p>
+
+<p align="center">
+  <a href="#快速开始">快速开始</a> · <a href="#能干什么">功能介绍</a> · <a href="#对话效果预览">效果预览</a> · <a href="#mcp-工具使用">MCP 工具</a>
+</p>
+
+---
+
 > 每次刷到"活动已结束"四个字，是不是血压直接拉满？
 
 **麦门活动情报局**是你的麦当劳活动私人情报员 —— 帮你第一时间掌握所有活动动态，看清活动、看懂玩法、不再错过任何一次薅羊毛的机会。
